@@ -3,6 +3,7 @@
 static void init_clock(void)
 {
     rcc_clock_setup_in_hse_8mhz_out_72mhz();
+    rcc_periph_clock_enable(RCC_GPIOA);
 }
 
 static void gpio_init(void)
@@ -49,11 +50,14 @@ const TickType_t xDelay250ms = pdMS_TO_TICKS( 250 );
  /* As per most tasks, this task is implemented in an infinite loop. */
  for( ;; )
  {
+ gpio_set(GPIOA, GPIO11);
  /* Print out the name of this task AND the number of times ulIdleCycleCount
  has been incremented. */
  uart_printf("%s" , pcTaskName );
  uart_printf("%d \n" , ulIdleCycleCount );
  /* Delay for a period of 250 milliseconds. */
+ vTaskDelay( xDelay250ms );
+ gpio_clear(GPIOA, GPIO11);
  vTaskDelay( xDelay250ms );
  }
 }
