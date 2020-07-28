@@ -12,14 +12,11 @@ static void init_clock(void)
 {
     rcc_clock_setup_in_hse_8mhz_out_72mhz();
     rcc_periph_clock_enable(RCC_GPIOA);
-    rcc_periph_clock_enable(RCC_GPIOB);
 }
 
 static void gpio_init(void)
 {
-    gpio_set_mode(GPIOA,GPIO_MODE_OUTPUT_2_MHZ, GPIO_CNF_OUTPUT_PUSHPULL,GPIO11|GPIO12);
-    gpio_set_mode(GPIOB,GPIO_MODE_OUTPUT_2_MHZ, GPIO_CNF_OUTPUT_PUSHPULL,GPIO10|GPIO11);
-
+    gpio_set_mode(GPIOA,GPIO_MODE_OUTPUT_2_MHZ, GPIO_CNF_OUTPUT_PUSHPULL,GPIO11);
 }
 
 
@@ -33,9 +30,6 @@ void vApplicationIdleHook( void )
 static void SHT_Read(void *args __attribute__((unused)))
 {
     float temperature,humidity;
-    SHT3X_SoftReset(&i2c);
-    vTaskDelay( pdMS_TO_TICKS(1000) );
-
     for(;;){
 
 /*
@@ -72,7 +66,7 @@ static void SHT_Read(void *args __attribute__((unused)))
     }
 
 */
-    SHT3X_GetTempAndHumi(&i2c, &temperature, &humidity, REPEATAB_LOW, MODE_CLKSTRETCH);
+    SHT3X_GetTempAndHumi(&i2c, &temperature, &humidity, REPEATAB_HIGH, MODE_CLKSTRETCH);
 
     printf("nhiet do: %0.2f \n", temperature);  
     printf("do am: %0.2f \n", humidity);  
@@ -91,16 +85,12 @@ pcTaskName = ( char * ) pvParameters;
 for( ;; )
     {
     gpio_set(GPIOA, GPIO11);
-    gpio_set(GPIOA, GPIO12);
-    gpio_set(GPIOB, GPIO10);
-    gpio_set(GPIOB, GPIO11);
+
     printf("%s" , pcTaskName );
     printf("%ld \n" , ulIdleCycleCount );
     vTaskDelay( xDelay250ms );
     gpio_clear(GPIOA, GPIO11);
-    gpio_clear(GPIOA, GPIO12);
-    gpio_clear(GPIOB, GPIO11);
-    gpio_clear(GPIOB, GPIO10);
+
     vTaskDelay( xDelay250ms );
     }
 }

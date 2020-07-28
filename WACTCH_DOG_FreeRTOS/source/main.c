@@ -77,6 +77,8 @@ static void SHT_Read(void *args __attribute__((unused)))
     printf("nhiet do: %0.2f \n", temperature);  
     printf("do am: %0.2f \n", humidity);  
     vTaskDelay( xDelay250ms );
+    
+    iwdg_reset();
     }
 
 }
@@ -111,6 +113,7 @@ int main(void)
     gpio_init();
     init_uart();
     SHT3X_Init(&i2c, addr_sht, I2C1, 1000);
+    iwd_init(); // watch dog dem thoi gian 5s. ham dc reset khi goi ham iwdg_reset();
 
 static const char *pcTextForTask1 = "Task 1 is running\r\n";
 //static const char *pcTextForTask2 = "Task 2 is running\r\n";

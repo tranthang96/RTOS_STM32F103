@@ -6,6 +6,8 @@ Archive member included to satisfy reference by file (symbol)
                               bin/i2c/sht3x.o (gpio_set)
 /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
                               bin/i2c/i2c.o (i2c_reset)
+/opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+                              bin/watchdog/iwdg.o (iwdg_start)
 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
                               bin/source/main.o (rcc_clock_setup_in_hse_8mhz_out_72mhz)
 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
@@ -450,7 +452,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xaa bin/rtos/queue.o
  .debug_macro   0x0000000000000000       0x80 bin/rtos/queue.o
  .debug_line    0x0000000000000000      0xfe4 bin/rtos/queue.o
- .debug_str     0x0000000000000000     0xba03 bin/rtos/queue.o
+ .debug_str     0x0000000000000000     0xba0c bin/rtos/queue.o
  .comment       0x0000000000000000       0x7a bin/rtos/queue.o
  .debug_frame   0x0000000000000000      0x278 bin/rtos/queue.o
  .ARM.attributes
@@ -498,7 +500,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xaa bin/rtos/croutine.o
  .debug_macro   0x0000000000000000       0x43 bin/rtos/croutine.o
  .debug_line    0x0000000000000000      0x20b bin/rtos/croutine.o
- .debug_str     0x0000000000000000     0x81bd bin/rtos/croutine.o
+ .debug_str     0x0000000000000000     0x81c6 bin/rtos/croutine.o
  .comment       0x0000000000000000       0x7a bin/rtos/croutine.o
  .ARM.attributes
                 0x0000000000000000       0x33 bin/rtos/croutine.o
@@ -652,7 +654,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x91 bin/rtos/event_groups.o
  .debug_macro   0x0000000000000000       0x19 bin/rtos/event_groups.o
  .debug_line    0x0000000000000000      0x709 bin/rtos/event_groups.o
- .debug_str     0x0000000000000000     0xb7bc bin/rtos/event_groups.o
+ .debug_str     0x0000000000000000     0xb7c5 bin/rtos/event_groups.o
  .comment       0x0000000000000000       0x7a bin/rtos/event_groups.o
  .debug_frame   0x0000000000000000       0xf8 bin/rtos/event_groups.o
  .ARM.attributes
@@ -762,7 +764,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xaa bin/rtos/stream_buffer.o
  .debug_macro   0x0000000000000000       0x18 bin/rtos/stream_buffer.o
  .debug_line    0x0000000000000000      0xd95 bin/rtos/stream_buffer.o
- .debug_str     0x0000000000000000     0xb78f bin/rtos/stream_buffer.o
+ .debug_str     0x0000000000000000     0xb798 bin/rtos/stream_buffer.o
  .comment       0x0000000000000000       0x7a bin/rtos/stream_buffer.o
  .debug_frame   0x0000000000000000      0x208 bin/rtos/stream_buffer.o
  .ARM.attributes
@@ -1027,10 +1029,53 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x80 bin/rtos/timers.o
  .debug_macro   0x0000000000000000       0x97 bin/rtos/timers.o
  .debug_line    0x0000000000000000      0x291 bin/rtos/timers.o
- .debug_str     0x0000000000000000     0xb7d1 bin/rtos/timers.o
+ .debug_str     0x0000000000000000     0xb7da bin/rtos/timers.o
  .comment       0x0000000000000000       0x7a bin/rtos/timers.o
  .ARM.attributes
                 0x0000000000000000       0x33 bin/rtos/timers.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .group         0x0000000000000000        0xc bin/watchdog/iwdg.o
+ .text          0x0000000000000000        0x0 bin/watchdog/iwdg.o
+ .data          0x0000000000000000        0x0 bin/watchdog/iwdg.o
+ .bss           0x0000000000000000        0x0 bin/watchdog/iwdg.o
+ .text.iwd_init
+                0x0000000000000000       0x16 bin/watchdog/iwdg.o
+ .debug_info    0x0000000000000000       0xd2 bin/watchdog/iwdg.o
+ .debug_abbrev  0x0000000000000000       0x8e bin/watchdog/iwdg.o
+ .debug_aranges
+                0x0000000000000000       0x20 bin/watchdog/iwdg.o
+ .debug_ranges  0x0000000000000000       0x10 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0xbd bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000      0xa96 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0x1c bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0x22 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0x56 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0x51 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0xef bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0x6a bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000      0x1df bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0x22 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0xe8 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0x76 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000      0x1b4 bin/watchdog/iwdg.o
+ .debug_macro   0x0000000000000000       0x70 bin/watchdog/iwdg.o
+ .debug_line    0x0000000000000000      0x287 bin/watchdog/iwdg.o
+ .debug_str     0x0000000000000000     0x4f4d bin/watchdog/iwdg.o
+ .comment       0x0000000000000000       0x7a bin/watchdog/iwdg.o
+ .debug_frame   0x0000000000000000       0x2c bin/watchdog/iwdg.o
+ .ARM.attributes
+                0x0000000000000000       0x2d bin/watchdog/iwdg.o
  .group         0x0000000000000000        0xc bin/rtos/portable/ARM_CM3/port.o
  .group         0x0000000000000000        0xc bin/rtos/portable/ARM_CM3/port.o
  .group         0x0000000000000000        0xc bin/rtos/portable/ARM_CM3/port.o
@@ -1365,6 +1410,58 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x16d /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
  .debug_macro   0x0000000000000000      0x32c /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
  .debug_macro   0x0000000000000000      0x82c /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .text          0x0000000000000000        0x0 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .data          0x0000000000000000        0x0 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .bss           0x0000000000000000        0x0 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .text.iwdg_start
+                0x0000000000000000       0x10 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .text.iwdg_reload_busy
+                0x0000000000000000       0x10 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .text.iwdg_set_period_ms
+                0x0000000000000000       0x64 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .text.iwdg_prescaler_busy
+                0x0000000000000000       0x10 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .text.iwdg_reset
+                0x0000000000000000       0x10 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_info    0x0000000000000000      0x17c /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_abbrev  0x0000000000000000      0x112 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_loc     0x0000000000000000       0xbf /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_aranges
+                0x0000000000000000       0x40 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_ranges  0x0000000000000000       0x48 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0xc5 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000      0xa90 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0x1c /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0x22 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0x56 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0x51 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0xef /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0x6a /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000      0x1df /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0x22 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0xe8 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0x76 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000      0x1b4 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_macro   0x0000000000000000       0x70 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_line    0x0000000000000000      0x384 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_str     0x0000000000000000     0x4fd2 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .comment       0x0000000000000000       0x7a /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_frame   0x0000000000000000       0x68 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .ARM.attributes
+                0x0000000000000000       0x2d /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
  .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
  .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
  .group         0x0000000000000000        0xc /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
@@ -1979,6 +2076,7 @@ LOAD bin/rtos/stream_buffer.o
 LOAD bin/rtos/tasks.o
 LOAD bin/rtos/opencm3.o
 LOAD bin/rtos/timers.o
+LOAD bin/watchdog/iwdg.o
 LOAD bin/rtos/portable/ARM_CM3/port.o
 LOAD bin/rtos/portable/MemMang/heap_4.o
 LOAD bin/source/main.o
@@ -3086,44 +3184,44 @@ OUTPUT(uart-test.elf elf32-littlearm)
  .debug_line    0x00000000000072ae      0x3df /opt/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
  .debug_line    0x000000000000768d      0x305 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
 
-.debug_str      0x0000000000000000    0x1a33f
- .debug_str     0x0000000000000000     0xb78c bin/uart/retarget.o
-                                       0xb920 (size before relaxing)
- .debug_str     0x000000000000b78c      0x2fb bin/uart/uart.o
-                                       0xbbcd (size before relaxing)
- .debug_str     0x000000000000ba87     0x5716 bin/i2c/sht3x.o
-                                      0x103a6 (size before relaxing)
- .debug_str     0x000000000001119d      0x1f0 bin/i2c/i2c.o
-                                       0x9edd (size before relaxing)
- .debug_str     0x000000000001138d     0x2ab4 bin/rtos/list.o
-                                       0xa395 (size before relaxing)
- .debug_str     0x0000000000013e41     0x1ab9 bin/rtos/tasks.o
-                                       0xc56a (size before relaxing)
- .debug_str     0x00000000000158fa      0x86a bin/rtos/opencm3.o
-                                       0xf19f (size before relaxing)
- .debug_str     0x0000000000016164      0x597 bin/rtos/portable/ARM_CM3/port.o
-                                       0x82d7 (size before relaxing)
- .debug_str     0x00000000000166fb      0x307 bin/rtos/portable/MemMang/heap_4.o
-                                       0xacad (size before relaxing)
- .debug_str     0x0000000000016a02      0x7b0 bin/source/main.o
-                                      0x13ccd (size before relaxing)
- .debug_str     0x00000000000171b2       0x83 /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
+.debug_str      0x0000000000000000    0x1a348
+ .debug_str     0x0000000000000000     0xb795 bin/uart/retarget.o
+                                       0xb929 (size before relaxing)
+ .debug_str     0x000000000000b795      0x2fb bin/uart/uart.o
+                                       0xbbd6 (size before relaxing)
+ .debug_str     0x000000000000ba90     0x5716 bin/i2c/sht3x.o
+                                      0x103af (size before relaxing)
+ .debug_str     0x00000000000111a6      0x1f0 bin/i2c/i2c.o
+                                       0x9ee6 (size before relaxing)
+ .debug_str     0x0000000000011396     0x2ab4 bin/rtos/list.o
+                                       0xa39e (size before relaxing)
+ .debug_str     0x0000000000013e4a     0x1ab9 bin/rtos/tasks.o
+                                       0xc573 (size before relaxing)
+ .debug_str     0x0000000000015903      0x86a bin/rtos/opencm3.o
+                                       0xf1a8 (size before relaxing)
+ .debug_str     0x000000000001616d      0x597 bin/rtos/portable/ARM_CM3/port.o
+                                       0x82e0 (size before relaxing)
+ .debug_str     0x0000000000016704      0x307 bin/rtos/portable/MemMang/heap_4.o
+                                       0xacb6 (size before relaxing)
+ .debug_str     0x0000000000016a0b      0x7b0 bin/source/main.o
+                                      0x13cd6 (size before relaxing)
+ .debug_str     0x00000000000171bb       0x83 /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
                                        0x859b (size before relaxing)
- .debug_str     0x0000000000017235       0x6c /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio_common_all.o)
+ .debug_str     0x000000000001723e       0x6c /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio_common_all.o)
                                        0x858f (size before relaxing)
- .debug_str     0x00000000000172a1      0x412 /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
+ .debug_str     0x00000000000172aa      0x412 /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
                                        0x85d9 (size before relaxing)
- .debug_str     0x00000000000176b3      0xc86 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
+ .debug_str     0x00000000000176bc      0xc86 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
                                        0x7e8e (size before relaxing)
- .debug_str     0x0000000000018339      0x168 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
+ .debug_str     0x0000000000018342      0x168 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
                                        0x77a4 (size before relaxing)
- .debug_str     0x00000000000184a1      0x17b /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_all.o)
+ .debug_str     0x00000000000184aa      0x17b /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_all.o)
                                        0x8363 (size before relaxing)
- .debug_str     0x000000000001861c       0x2d /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_f124.o)
+ .debug_str     0x0000000000018625       0x2d /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_f124.o)
                                        0x819d (size before relaxing)
- .debug_str     0x0000000000018649     0x1c92 /opt/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
+ .debug_str     0x0000000000018652     0x1c92 /opt/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
                                        0x6664 (size before relaxing)
- .debug_str     0x000000000001a2db       0x64 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
+ .debug_str     0x000000000001a2e4       0x64 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
                                        0x5567 (size before relaxing)
 
 .comment        0x0000000000000000       0x79
