@@ -34,7 +34,25 @@ bin/source/main.o: source/main.c source/main.h \
  /opt/gcc-arm/arm-none-eabi/include/newlib.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/config.h \
  /opt/gcc-arm/arm-none-eabi/include/machine/ieeefp.h \
- /opt/gcc-arm/arm-none-eabi/include/machine/setjmp.h \
+ /opt/gcc-arm/arm-none-eabi/include/machine/setjmp.h watchdog/iwdg.h \
+ /opt/libopencm3/include/libopencm3/stm32/iwdg.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/iwdg.h \
+ /opt/libopencm3/include/libopencm3/stm32/common/iwdg_common_all.h \
+ rtc/rtc.h /opt/libopencm3/include/libopencm3/stm32/dma.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/dma.h \
+ /opt/libopencm3/include/libopencm3/stm32/common/dma_common_l1f013.h \
+ /opt/libopencm3/include/libopencm3/cm3/nvic.h \
+ /opt/libopencm3/include/libopencm3/dispatch/nvic.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/nvic.h \
+ /opt/libopencm3/include/libopencm3/stm32/timer.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/timer.h \
+ /opt/libopencm3/include/libopencm3/stm32/common/timer_common_all.h \
+ /opt/libopencm3/include/libopencm3/stm32/rtc.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/rtc.h \
+ /opt/libopencm3/include/libopencm3/stm32/pwr.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/pwr.h \
+ /opt/libopencm3/include/libopencm3/stm32/common/pwr_common_v1.h \
+ /opt/libopencm3/include/libopencm3/cm3/cortex.h \
  /opt/gcc-arm/arm-none-eabi/include/stdio.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/cdefs.h \
  /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
@@ -46,4 +64,5 @@ bin/source/main.o: source/main.c source/main.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/types.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/_pthreadtypes.h \
  /opt/gcc-arm/arm-none-eabi/include/machine/types.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/stdio.h
+ /opt/gcc-arm/arm-none-eabi/include/sys/stdio.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/bkp.h

@@ -6,7 +6,9 @@ PROJECT = uart-test
 #################### MODULE library #####################
 MODULES = uart \
 		i2c \
+		rtc \
 		rtos \
+		watchdog \
 		rtos/include \
 		rtos/portable/ARM_CM3 \
 		rtos/portable/MemMang

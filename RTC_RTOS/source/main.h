@@ -11,6 +11,10 @@
 
 #include "sht3x.h"
 
+#include "iwdg.h"
+
+#include "rtc.h"
+
 #include <stdio.h>
 void vApplicationIdleHook( void );
 

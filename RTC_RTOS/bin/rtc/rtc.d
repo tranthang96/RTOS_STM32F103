@@ -1,4 +1,4 @@
-bin/uart/retarget.o: uart/retarget.c \
+bin/rtc/rtc.o: rtc/rtc.c rtc/rtc.h \
  /opt/libopencm3/include/libopencm3/stm32/rcc.h \
  /opt/libopencm3/include/libopencm3/cm3/common.h \
  /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
@@ -17,32 +17,40 @@ bin/uart/retarget.o: uart/retarget.c \
  /opt/libopencm3/include/libopencm3/stm32/gpio.h \
  /opt/libopencm3/include/libopencm3/stm32/f1/gpio.h \
  /opt/libopencm3/include/libopencm3/stm32/common/gpio_common_all.h \
- /opt/libopencm3/include/libopencm3/stm32/usart.h \
- /opt/libopencm3/include/libopencm3/stm32/f1/usart.h \
- /opt/libopencm3/include/libopencm3/stm32/common/usart_common_f124.h \
- /opt/libopencm3/include/libopencm3/stm32/common/usart_common_all.h \
- /opt/gcc-arm/arm-none-eabi/include/stdlib.h \
- /opt/gcc-arm/arm-none-eabi/include/machine/ieeefp.h \
+ /opt/libopencm3/include/libopencm3/stm32/dma.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/dma.h \
+ /opt/libopencm3/include/libopencm3/stm32/common/dma_common_l1f013.h \
+ /opt/libopencm3/include/libopencm3/cm3/nvic.h \
+ /opt/libopencm3/include/libopencm3/dispatch/nvic.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/nvic.h \
+ /opt/libopencm3/include/libopencm3/stm32/timer.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/timer.h \
+ /opt/libopencm3/include/libopencm3/stm32/common/timer_common_all.h \
+ /opt/libopencm3/include/libopencm3/stm32/rtc.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/rtc.h \
+ /opt/libopencm3/include/libopencm3/stm32/pwr.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/pwr.h \
+ /opt/libopencm3/include/libopencm3/stm32/common/pwr_common_v1.h \
+ /opt/libopencm3/include/libopencm3/cm3/cortex.h \
+ /opt/libopencm3/include/libopencm3/stm32/f1/bkp.h \
+ /opt/gcc-arm/arm-none-eabi/include/time.h \
  /opt/gcc-arm/arm-none-eabi/include/_ansi.h \
  /opt/gcc-arm/arm-none-eabi/include/newlib.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/config.h \
+ /opt/gcc-arm/arm-none-eabi/include/machine/ieeefp.h \
+ /opt/gcc-arm/arm-none-eabi/include/sys/cdefs.h \
  /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/reent.h \
  /opt/gcc-arm/arm-none-eabi/include/_ansi.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/_types.h \
  /opt/gcc-arm/arm-none-eabi/include/machine/_types.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/lock.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/cdefs.h \
- /opt/gcc-arm/arm-none-eabi/include/machine/stdlib.h \
- /opt/gcc-arm/arm-none-eabi/include/string.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/string.h \
- /opt/gcc-arm/arm-none-eabi/include/errno.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/errno.h \
- /opt/gcc-arm/arm-none-eabi/include/stdio.h \
- /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
+ /opt/gcc-arm/arm-none-eabi/include/machine/time.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/types.h \
  /opt/gcc-arm/arm-none-eabi/include/sys/_pthreadtypes.h \
  /opt/gcc-arm/arm-none-eabi/include/machine/types.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/stdio.h \
- /opt/gcc-arm/arm-none-eabi/include/unistd.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/unistd.h
+ /opt/gcc-arm/arm-none-eabi/include/sys/timespec.h \
+ /opt/gcc-arm/arm-none-eabi/include/sys/_timespec.h \
+ /opt/gcc-arm/arm-none-eabi/include/stdio.h \
+ /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
+ /opt/gcc-arm/arm-none-eabi/include/sys/stdio.h
