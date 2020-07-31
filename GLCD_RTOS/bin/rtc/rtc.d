@@ -1,14 +1,14 @@
 bin/rtc/rtc.o: rtc/rtc.c rtc/rtc.h \
  /opt/libopencm3/include/libopencm3/stm32/rcc.h \
  /opt/libopencm3/include/libopencm3/cm3/common.h \
- /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
- /opt/gcc-arm/arm-none-eabi/include/stdint.h \
- /opt/gcc-arm/arm-none-eabi/include/machine/_default_types.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/features.h \
- /opt/gcc-arm/arm-none-eabi/include/_newlib_version.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/_intsup.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/_stdint.h \
- /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include/stdint.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdint.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine/_default_types.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/features.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/_newlib_version.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/_intsup.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/_stdint.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include/stdbool.h \
  /opt/libopencm3/include/libopencm3/stm32/memorymap.h \
  /opt/libopencm3/include/libopencm3/stm32/f1/memorymap.h \
  /opt/libopencm3/include/libopencm3/cm3/memorymap.h \
@@ -33,24 +33,28 @@ bin/rtc/rtc.o: rtc/rtc.c rtc/rtc.h \
  /opt/libopencm3/include/libopencm3/stm32/common/pwr_common_v1.h \
  /opt/libopencm3/include/libopencm3/cm3/cortex.h \
  /opt/libopencm3/include/libopencm3/stm32/f1/bkp.h \
- /opt/gcc-arm/arm-none-eabi/include/time.h \
- /opt/gcc-arm/arm-none-eabi/include/_ansi.h \
- /opt/gcc-arm/arm-none-eabi/include/newlib.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/config.h \
- /opt/gcc-arm/arm-none-eabi/include/machine/ieeefp.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/cdefs.h \
- /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/reent.h \
- /opt/gcc-arm/arm-none-eabi/include/_ansi.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/_types.h \
- /opt/gcc-arm/arm-none-eabi/include/machine/_types.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/lock.h \
- /opt/gcc-arm/arm-none-eabi/include/machine/time.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/types.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/_pthreadtypes.h \
- /opt/gcc-arm/arm-none-eabi/include/machine/types.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/timespec.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/_timespec.h \
- /opt/gcc-arm/arm-none-eabi/include/stdio.h \
- /opt/gcc-arm/lib/gcc/arm-none-eabi/9.2.1/include/stdarg.h \
- /opt/gcc-arm/arm-none-eabi/include/sys/stdio.h
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/time.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/_ansi.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/newlib.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/config.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine/ieeefp.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/cdefs.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include/stddef.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/reent.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/_ansi.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/_types.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine/_types.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/lock.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine/time.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/types.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/_pthreadtypes.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/machine/types.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/timespec.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/_timespec.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdio.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/sys/stdio.h \
+ rtos/include/FreeRTOS.h rtos/FreeRTOSConfig.h rtos/include/projdefs.h \
+ rtos/include/portable.h rtos/include/deprecated_definitions.h \
+ rtos/portable/ARM_CM3/portmacro.h rtos/include/mpu_wrappers.h \
+ rtos/include/task.h rtos/include/list.h

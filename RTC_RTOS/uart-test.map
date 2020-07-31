@@ -3876,7 +3876,7 @@ OUTPUT(uart-test.elf elf32-littlearm)
  .debug_line    0x00000000000090c5      0x376 /opt/libopencm3/lib/libopencm3_stm32f1.a(nvic.o)
  .debug_line    0x000000000000943b      0x305 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
 
-.debug_str      0x0000000000000000    0x229f0
+.debug_str      0x0000000000000000    0x22a20
  .debug_str     0x0000000000000000    0x10041 bin/uart/retarget.o
                                       0x1041b (size before relaxing)
  .debug_str     0x0000000000010041      0x2fb bin/uart/uart.o
@@ -3885,47 +3885,47 @@ OUTPUT(uart-test.elf elf32-littlearm)
                                       0x10467 (size before relaxing)
  .debug_str     0x000000000001558e      0x1f5 bin/i2c/i2c.o
                                        0x9f9e (size before relaxing)
- .debug_str     0x0000000000015783     0x75cb bin/rtc/rtc.o
-                                      0x15619 (size before relaxing)
- .debug_str     0x000000000001cd4e      0x122 bin/rtos/list.o
+ .debug_str     0x0000000000015783     0x75fb bin/rtc/rtc.o
+                                      0x15618 (size before relaxing)
+ .debug_str     0x000000000001cd7e      0x122 bin/rtos/list.o
                                        0xa456 (size before relaxing)
- .debug_str     0x000000000001ce70     0x1aad bin/rtos/tasks.o
+ .debug_str     0x000000000001cea0     0x1aad bin/rtos/tasks.o
                                        0xc62b (size before relaxing)
- .debug_str     0x000000000001e91d       0x77 bin/rtos/opencm3.o
+ .debug_str     0x000000000001e94d       0x77 bin/rtos/opencm3.o
                                        0xf260 (size before relaxing)
- .debug_str     0x000000000001e994      0x1fa bin/watchdog/iwdg.o
+ .debug_str     0x000000000001e9c4      0x1fa bin/watchdog/iwdg.o
                                        0x4f43 (size before relaxing)
- .debug_str     0x000000000001eb8e      0x597 bin/rtos/portable/ARM_CM3/port.o
+ .debug_str     0x000000000001ebbe      0x597 bin/rtos/portable/ARM_CM3/port.o
                                        0x8398 (size before relaxing)
- .debug_str     0x000000000001f125      0x307 bin/rtos/portable/MemMang/heap_4.o
+ .debug_str     0x000000000001f155      0x307 bin/rtos/portable/MemMang/heap_4.o
                                        0xad6e (size before relaxing)
- .debug_str     0x000000000001f42c       0x9a bin/source/main.o
+ .debug_str     0x000000000001f45c       0x9a bin/source/main.o
                                       0x1b20f (size before relaxing)
- .debug_str     0x000000000001f4c6       0x83 /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
+ .debug_str     0x000000000001f4f6       0x83 /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
                                        0x859b (size before relaxing)
- .debug_str     0x000000000001f549       0x77 /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio_common_all.o)
+ .debug_str     0x000000000001f579       0x77 /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio_common_all.o)
                                        0x858f (size before relaxing)
- .debug_str     0x000000000001f5c0      0x412 /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
+ .debug_str     0x000000000001f5f0      0x412 /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
                                        0x85d9 (size before relaxing)
- .debug_str     0x000000000001f9d2       0xa6 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_str     0x000000000001fa02       0xa6 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
                                        0x4fd2 (size before relaxing)
- .debug_str     0x000000000001fa78      0x169 /opt/libopencm3/lib/libopencm3_stm32f1.a(pwr_common_v1.o)
+ .debug_str     0x000000000001faa8      0x169 /opt/libopencm3/lib/libopencm3_stm32f1.a(pwr_common_v1.o)
                                        0x51bc (size before relaxing)
- .debug_str     0x000000000001fbe1      0xc44 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
+ .debug_str     0x000000000001fc11      0xc44 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
                                        0x7e8e (size before relaxing)
- .debug_str     0x0000000000020825      0x168 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
+ .debug_str     0x0000000000020855      0x168 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
                                        0x77a4 (size before relaxing)
- .debug_str     0x000000000002098d       0xed /opt/libopencm3/lib/libopencm3_stm32f1.a(rtc.o)
+ .debug_str     0x00000000000209bd       0xed /opt/libopencm3/lib/libopencm3_stm32f1.a(rtc.o)
                                        0x7b39 (size before relaxing)
- .debug_str     0x0000000000020a7a      0x18f /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_all.o)
+ .debug_str     0x0000000000020aaa      0x18f /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_all.o)
                                        0x8363 (size before relaxing)
- .debug_str     0x0000000000020c09       0x2d /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_f124.o)
+ .debug_str     0x0000000000020c39       0x2d /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_f124.o)
                                        0x819d (size before relaxing)
- .debug_str     0x0000000000020c36     0x1c92 /opt/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
+ .debug_str     0x0000000000020c66     0x1c92 /opt/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
                                        0x6664 (size before relaxing)
- .debug_str     0x00000000000228c8       0xc4 /opt/libopencm3/lib/libopencm3_stm32f1.a(nvic.o)
+ .debug_str     0x00000000000228f8       0xc4 /opt/libopencm3/lib/libopencm3_stm32f1.a(nvic.o)
                                        0x5c46 (size before relaxing)
- .debug_str     0x000000000002298c       0x64 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
+ .debug_str     0x00000000000229bc       0x64 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
                                        0x5567 (size before relaxing)
 
 .comment        0x0000000000000000       0x79

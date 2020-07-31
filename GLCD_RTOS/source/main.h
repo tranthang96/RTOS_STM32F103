@@ -5,6 +5,9 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/stm32/usart.h>
 #include <libopencm3/stm32/i2c.h>
+
+#include <libopencm3/stm32/f1/bkp.h>
+
 #include "uart.h"
 #include "FreeRTOS.h"
 #include "task.h"
@@ -15,7 +18,17 @@
 
 #include "rtc.h"
 
+#include "st7920.h"
+#include "gui.h"
+
+
+
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
 #include <stdio.h>
+#include <unistd.h>
+#include <math.h>
 void vApplicationIdleHook( void );
 
 #endif

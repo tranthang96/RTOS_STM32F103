@@ -5,6 +5,7 @@ PROJECT = uart-test
 
 #################### MODULE library #####################
 MODULES = uart \
+		glcd \
 		i2c \
 		rtc \
 		rtos \
