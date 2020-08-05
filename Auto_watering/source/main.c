@@ -70,8 +70,8 @@ static void Time_RTC(void *args)
         localTime.year = 2020;
         localTime.month = 8;
         localTime.mday = 1;
-        localTime.hour = 6-7;
-        localTime.min = 0;
+        localTime.hour = 9-7;
+        localTime.min = 33;
         localTime.sec = 0;
         pwr_disable_backup_domain_write_protect();
         RTC_Sync(&localTime, +7);

@@ -5673,7 +5673,7 @@ OUTPUT(uart-test.elf elf32-littlearm)
  .debug_macro   0x0000000000009655      0x39b /opt/libopencm3/lib/libopencm3_stm32f1.a(nvic.o)
  .debug_macro   0x00000000000099f0       0xc0 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
 
-.debug_line     0x0000000000000000     0xa233
+.debug_line     0x0000000000000000     0xa22f
  .debug_line    0x0000000000000000      0x44f bin/uart/retarget.o
  .debug_line    0x000000000000044f      0x34f bin/uart/uart.o
  .debug_line    0x000000000000079e      0x951 bin/i2c/sht3x.o
@@ -5685,20 +5685,20 @@ OUTPUT(uart-test.elf elf32-littlearm)
  .debug_line    0x00000000000043b7      0xca5 bin/libwwg/uartlib.o
  .debug_line    0x000000000000505c      0x460 bin/rtos/portable/ARM_CM3/port.o
  .debug_line    0x00000000000054bc      0x69a bin/rtos/portable/MemMang/heap_4.o
- .debug_line    0x0000000000005b56      0x74e bin/source/main.o
- .debug_line    0x00000000000062a4      0x33e /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
- .debug_line    0x00000000000065e2      0x354 /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio_common_all.o)
- .debug_line    0x0000000000006936      0x7c2 /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
- .debug_line    0x00000000000070f8      0x384 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
- .debug_line    0x000000000000747c      0x3f1 /opt/libopencm3/lib/libopencm3_stm32f1.a(pwr_common_v1.o)
- .debug_line    0x000000000000786d      0xc89 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
- .debug_line    0x00000000000084f6      0x37e /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
- .debug_line    0x0000000000008874      0x6c5 /opt/libopencm3/lib/libopencm3_stm32f1.a(rtc.o)
- .debug_line    0x0000000000008f39      0x557 /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_all.o)
- .debug_line    0x0000000000009490      0x349 /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_f124.o)
- .debug_line    0x00000000000097d9      0x3df /opt/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
- .debug_line    0x0000000000009bb8      0x376 /opt/libopencm3/lib/libopencm3_stm32f1.a(nvic.o)
- .debug_line    0x0000000000009f2e      0x305 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
+ .debug_line    0x0000000000005b56      0x74a bin/source/main.o
+ .debug_line    0x00000000000062a0      0x33e /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
+ .debug_line    0x00000000000065de      0x354 /opt/libopencm3/lib/libopencm3_stm32f1.a(gpio_common_all.o)
+ .debug_line    0x0000000000006932      0x7c2 /opt/libopencm3/lib/libopencm3_stm32f1.a(i2c_common_v1.o)
+ .debug_line    0x00000000000070f4      0x384 /opt/libopencm3/lib/libopencm3_stm32f1.a(iwdg_common_all.o)
+ .debug_line    0x0000000000007478      0x3f1 /opt/libopencm3/lib/libopencm3_stm32f1.a(pwr_common_v1.o)
+ .debug_line    0x0000000000007869      0xc89 /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc.o)
+ .debug_line    0x00000000000084f2      0x37e /opt/libopencm3/lib/libopencm3_stm32f1.a(rcc_common_all.o)
+ .debug_line    0x0000000000008870      0x6c5 /opt/libopencm3/lib/libopencm3_stm32f1.a(rtc.o)
+ .debug_line    0x0000000000008f35      0x557 /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_all.o)
+ .debug_line    0x000000000000948c      0x349 /opt/libopencm3/lib/libopencm3_stm32f1.a(usart_common_f124.o)
+ .debug_line    0x00000000000097d5      0x3df /opt/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
+ .debug_line    0x0000000000009bb4      0x376 /opt/libopencm3/lib/libopencm3_stm32f1.a(nvic.o)
+ .debug_line    0x0000000000009f2a      0x305 /opt/libopencm3/lib/libopencm3_stm32f1.a(flash_common_all.o)
 
 .debug_str      0x0000000000000000    0x234a6
  .debug_str     0x0000000000000000    0x10045 bin/uart/retarget.o
